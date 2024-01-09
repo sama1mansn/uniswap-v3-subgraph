@@ -4,18 +4,18 @@ import { Bundle, Pool, Token } from './../types/schema'
 import { ONE_BD, ZERO_BD, ZERO_BI } from './constants'
 import { exponentToBigDecimal, safeDiv } from '../utils/index'
 
-const WETH_ADDRESS = '0x7be7937a395fd3b527f428124f6a33e10d1c0638'
-const USDC_WETH_03_POOL = '0xb5296b198b7ef59095f346f137bca29a36a17ffd'
+const WETH_ADDRESS = '0xae2C46ddb314B9Ba743C6dEE4878F151881333D9'
+const USDC_WETH_03_POOL = '0xF36102C91991262127A3030FBC11c8bAD909bEc7'
 
 // token where amounts should contribute to tracked volume and liquidity
 // usually tokens that many tokens are paired with s
 export let WHITELIST_TOKENS: string[] = [
   WETH_ADDRESS, // WETH
-  '0xf0380c236eb7c3fc51a9b46706d27ba738b0be7f', // USDC
+  '0x0011E559da84dde3f841e22dc33F3adbF184D84A', // USDC
 ]
 
 let STABLE_COINS: string[] = [
-  '0xf0380c236eb7c3fc51a9b46706d27ba738b0be7f',
+  '0x0011E559da84dde3f841e22dc33F3adbF184D84A',
 ]
 
 let MINIMUM_ETH_LOCKED = BigDecimal.fromString('60')
